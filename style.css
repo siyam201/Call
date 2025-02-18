@@ -1,0 +1,141 @@
+/* General Body Styles */
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+}
+
+/* Login Screen Styles */
+.login-screen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #128C7E;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.login-box {
+  background-color: #075E54;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.login-box h2 {
+  color: white;
+  margin-bottom: 20px;
+}
+
+.login-box input {
+  margin-bottom: 10px;
+  padding: 8px 15px;
+  border-radius: 20px;
+  border: none;
+  outline: none;
+  width: 200px;
+}
+
+/* Container Styles (for video call page) */
+.container {
+  height: 100vh;
+  background-color: #128C7E;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+}
+
+/* Header Styling */
+h1 {
+  margin: 0;
+  padding: 15px;
+  background-color: #075E54;
+  width: 100%;
+  text-align: center;
+}
+
+/* Controls Styles (buttons and input fields) */
+#controls {
+  background-color: #075E54;
+  padding: 10px;
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+#controls input, button {
+  padding: 8px 16px;
+  margin: 5px;
+  font-weight: bold;
+  border-radius: 20px;
+  border: none;
+  outline: none;
+}
+
+#controls button {
+  cursor: pointer;
+  background-color: #25D366;
+  color: white;
+}
+
+#controls button:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+}
+
+/* Video Container Styles */
+#videoContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+  background-color: #DCF8C6;
+  min-height: calc(100vh - 180px);
+}
+
+video {
+  width: 320px;
+  height: 240px;
+  border-radius: 8px;
+  border: 2px solid #25D366;
+  background: #000;
+}
+
+/* Call Status Styling */
+#callStatus {
+  color: white;
+  padding: 10px;
+  text-align: center;
+  background-color: #075E54;
+  width: 100%;
+}
+
+/* File List Styling */
+#fileList {
+  padding: 10px;
+  background-color: #075E54;
+  color: white;
+  width: 100%;
+}
+
+.file-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px;
+  margin: 5px 0;
+  background-color: #128C7E;
+  border-radius: 8px;
+}
+
+.file-item button {
+  padding: 4px 8px;
+  margin: 0;
+  cursor: pointer;
+}

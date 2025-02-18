@@ -4,7 +4,7 @@ const app = express();
 const http = require('http').createServer(app);
 const io = require('socket.io')(http);
 
-app.use(express.static('public'));
+app.use(express.static('/'));
 
 io.on('connection', (socket) => {
   socket.on('join', (roomId) => {
